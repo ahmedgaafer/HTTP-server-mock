@@ -104,9 +104,9 @@ namespace HTTPServer
                 //TODO: check for bad request 
                 if (!request.ParseRequest())
                 {
-                    code = StatusCode.NotFound;
+                    code = StatusCode.BadRequest;
                     content = this.LoadDefaultPage(Configuration.BadRequestDefaultPageName);
-                    return new Response(StatusCode.BadRequest, "text/html", content, "");
+                    return new Response(code, "text/html", content, "");
                 }
                 //TODO: map the relativeURI in request to get the physical path of the resource.
                 string relativePath = request.relativeURI.TrimStart('/');
@@ -125,7 +125,7 @@ namespace HTTPServer
                 }
 
                 // Create OK response
-                return new Response(code, "text/html", content, "aboutus2.html");
+                return new Response(code, "text/html", content, "");
 
             }
             catch (Exception ex)
@@ -134,9 +134,9 @@ namespace HTTPServer
                 Console.WriteLine("Error while parsing the request please check the log file");
                 Logger.LogException(ex);
                 // TODO: in case of exception, return Internal Server Error. 
-                code = StatusCode.NotFound;
-                content = this.LoadDefaultPage(Configuration.NotFoundDefaultPageName);
-                return new Response(StatusCode.InternalServerError, "text/html", content, "");
+                code = StatusCode.InternalServerError;
+                content = this.LoadDefaultPage(Configuration.InternalErrorDefaultPageName);
+                return new Response(code, "text/html", content, "");
             }
         }
 

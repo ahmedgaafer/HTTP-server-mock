@@ -41,8 +41,8 @@ namespace HTTPServer
             string statusLine = string.Empty;
 
             int codeNum = (code == StatusCode.BadRequest) ? 400 :
-                         (code == StatusCode.InternalServerError) ? 5000 :
-                         (code == StatusCode.NotFound) ? 400 :
+                         (code == StatusCode.InternalServerError) ? 500 :
+                         (code == StatusCode.NotFound) ? 404 :
                          (code == StatusCode.Redirect) ? 301 : 200;
             statusLine = $"{Configuration.ServerHTTPVersion} {codeNum} {code.ToString()}\r\n";
 

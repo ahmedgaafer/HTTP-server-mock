@@ -8,3 +8,9 @@ C:\Users\Wrath\Desktop\network project\Lab9\NetworkProject[2019-2020]\Template[2
 C:\Users\Wrath\Desktop\network project\Lab9\NetworkProject[2019-2020]\Template[2019-2020]\HTTPServer\obj\x86\Debug\HTTPServer.csproj.CoreCompileInputs.cache
 C:\Users\Wrath\Desktop\network project\Lab9\NetworkProject[2019-2020]\Template[2019-2020]\HTTPServer\obj\x86\Debug\HTTPServer.exe
 C:\Users\Wrath\Desktop\network project\Lab9\NetworkProject[2019-2020]\Template[2019-2020]\HTTPServer\obj\x86\Debug\HTTPServer.pdb
+C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\bin\Debug\HTTPServer.exe
+C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\bin\Debug\HTTPServer.pdb
+C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\obj\x86\Debug\HTTPServer.csprojAssemblyReference.cache
+C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\obj\x86\Debug\HTTPServer.csproj.CoreCompileInputs.cache
+C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\obj\x86\Debug\HTTPServer.exe
+C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\obj\x86\Debug\HTTPServer.pdb
