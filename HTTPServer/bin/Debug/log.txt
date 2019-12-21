@@ -110,3 +110,12 @@ File name: 'C:\inetpub\wwwroot\fcis1\aaaaa'
    at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
    at System.IO.File.ReadAllText(String path)
    at HTTPServer.Server.LoadDefaultPage(String defaultPageName) in C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\Server.cs:line 161
+[ 12/21/2019 4:32:25 PM ] EXEPTION: System.IO.FileNotFoundException: Could not find file 'C:\inetpub\wwwroot\fcis1\abasdasdasd'.
+File name: 'C:\inetpub\wwwroot\fcis1\abasdasdasd'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at System.IO.File.ReadAllText(String path)
+   at HTTPServer.Server.LoadDefaultPage(String defaultPageName) in C:\Users\Wrath\Desktop\GitHub Resp\HTTP-server-mock\HTTPServer\Server.cs:line 161

@@ -51,8 +51,9 @@ namespace HTTPServer
             // Parse Request line
             // Validate blank line exists
             // Load header lines into HeaderLines dictionary
-           
-            return this.loadLines() & this.ParseRequestLine() & this.ValidateBlankLine() & this.LoadHeaderLines();
+            var req = this.loadLines() & this.ParseRequestLine() & this.ValidateBlankLine() & this.LoadHeaderLines();
+
+            return (this.method == RequestMethod.POST) ? req & readContent() : req;
         }
 
         private bool loadLines()
